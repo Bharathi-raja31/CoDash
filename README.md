@@ -1,16 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## CoDash | Admin Dashboard Template
-- Api call using fetch
+- Optimized Responsive Version
+- Pixel Perfect Design
 - Smart & Dumb Component designs
 - Pagination for user list
-- View/Update profile information
 - Bootstrap UI Framework
 - Router with 404 / 500 error pages
 
 ## Demo Link
 
-https://dreamy-turing-79842a.netlify.app/
+https://optimistic-shannon-263678.netlify.app/
 
 ## Instructions
 ```
@@ -18,7 +18,6 @@ npm install
 
 npm start
 
-```
 ## Available Scripts
 
 In the project directory, you can run:
