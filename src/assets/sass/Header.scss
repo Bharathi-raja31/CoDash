@@ -1,0 +1,104 @@
+// Header
+.navbar{
+	background: #fff;
+	min-height: 48px;
+	border-bottom: 1px solid $color_border;
+	@media only screen and (min-width: 1024px){
+		padding: 0;
+	}
+	.navbar-nav{
+		margin-left: 13px;
+		@media screen and (max-width: 767px){
+			margin-left: 0;
+			margin-top: 10px;
+			display: block;
+		}
+		.nav-link{
+			padding: 0 15px;
+			margin-left: 1px;
+			margin-right: 1px;
+			line-height: 48px;
+			color: #171717;
+			position: relative;
+			
+		}
+		&.app-links{
+			.nav-link{
+				border-radius: 0;
+				font-size: 13px;
+				transition: all 250ms;
+				&::after{
+					position: absolute;
+					width: 0;
+					height: 4px;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					content: '';
+					background: $color_theme;
+					transition: all 250ms;
+				}
+				&.active, &:hover{
+					&::after{
+						width: 100%;
+						transition: all 350ms;
+					}
+				}
+				@media screen and (max-width: 767px){
+					background: $color_theme_light;
+					margin: 0 0 1px;
+				}
+			}
+		}
+		&.user-links{
+			.nav-link{
+				padding: 0 8px;
+				&:last-child{
+					padding-right: 0;
+				}
+			}
+			.profile{
+				@media screen and (max-width: 767px){
+					float: left;
+				}
+				img{
+					width: 26px;
+					height: 26px;
+					border-radius: 50%;
+				}
+			}
+			.notification{
+				position: relative;
+				@media screen and (max-width: 767px){
+					float: left;
+				}
+				.badge{
+					position: absolute;
+					background: $color_theme;
+					border-radius: 50%;
+					font-size: 8px;
+					height: 15px;
+					width: 15px;
+					line-height: 15px;
+					padding: 0;
+					right: 3px;
+					top: 10px;
+				}
+			}
+		}
+	}
+	.navbar-toggler{
+		border: 1px solid $color_lightBlue;
+		padding: 2px 8px;
+		border-radius: 2px;
+		&:focus, &:active{
+			outline: none;
+			border-color: $color_theme;
+		}
+	}
+}
+.navbar-brand{
+    img{
+        // max-width: 100px;
+    }   
+}
