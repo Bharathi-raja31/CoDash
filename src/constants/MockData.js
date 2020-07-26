@@ -78,7 +78,39 @@ export const filterItem = [
     },
     {
         name: "Item A9",
-        count: 400,
+        count: 40,
+    },
+    {
+        name: "Item A10",
+        count: 52,
+    },
+    {
+        name: "Item A11",
+        count: 23,
+    },
+    {
+        name: "Item A12",
+        count: 12,
+    },
+    {
+        name: "Item A13",
+        count: 14,
+    },
+    {
+        name: "Item A14",
+        count: 48,
+    },
+    {
+        name: "Item A15",
+        count: 98,
+    },
+    {
+        name: "Item A16",
+        count: 67,
+    },
+    {
+        name: "Item A17",
+        count: 76,
     }
 ]
 

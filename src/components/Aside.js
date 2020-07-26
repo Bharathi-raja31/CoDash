@@ -1,15 +1,34 @@
-import React from 'react';
+import * as React from 'react';
 
-// Bootstrap Components
-import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
+// Bootstrap
+import MediaQuery from 'react-responsive'
+import { Scrollbars } from 'react-custom-scrollbars';
 
-// Assets
-const headerLogo = require('../assets/img/header-logo.png');
+// Components
+// import Loader from '../components/Loader';
 
-const Aside = () => {
-    return (
-       
-    )
+// UI Components
+import SearchWidget from './SearchWidget'
+import SelectItemWidget from './SelectItemWidget';
+
+export default class Aside extends React.Component {
+
+    render() {
+        return (
+            <aside className="page-aside">
+                <div className="page-aside-inner">
+                    <SearchWidget />
+                    <MediaQuery minDeviceWidth={1025}>
+                        <Scrollbars autoHeight autoHeightMin={422} autoHeightMax={327}>
+                            <SelectItemWidget />
+                        </Scrollbars>
+                    </MediaQuery>
+                    <MediaQuery maxDeviceWidth={1024}>
+                        <SelectItemWidget />
+                    </MediaQuery>
+                </div>
+            </aside>
+
+        );
+    }
 }
-
-export default Aside;

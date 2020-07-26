@@ -10,11 +10,15 @@
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
+    "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^1.2.1",
     "react-circular-progressbar": "^2.0.3",
+    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-perfect-scrollbar": "^1.5.8",
+    "react-responsive": "^8.1.0",
+    "react-reveal": "^1.2.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
@@ -39,5 +43,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
